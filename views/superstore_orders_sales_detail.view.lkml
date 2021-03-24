@@ -27,13 +27,16 @@ view: superstore_orders_sales_detail {
       label: "my Investigator"
       url: "https://us-central1-testdataprepr.cloudfunctions.net/Test_data_action"
 
+      param: {
+        name: "email"
+        value: "{{_user_attributes['email']}}"
+      }
 
 
-
-     user_attribute_param: {
-     user_attribute: email
-     name: "email"
-    }
+     #user_attribute_param: {
+     #user_attribute: email
+     #name: "email"
+    #}
     }
 
   }

@@ -32,6 +32,21 @@ view: superstore_orders_sales_detail {
         value: "{{_user_attributes['email']}}"
       }
 
+      form_param: {
+
+        name: "investigator"
+
+        type: string
+
+        label: "Change Investigator"
+
+        default: "{{ value }}"
+
+
+        description: "Select an investigator to assign this patient"
+
+      }
+
 
      #user_attribute_param: {
      #user_attribute: email

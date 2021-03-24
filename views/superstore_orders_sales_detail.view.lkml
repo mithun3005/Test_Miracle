@@ -35,6 +35,8 @@ view: superstore_orders_sales_detail {
         value: "{{_user_attributes['email']}}"
       }
 
+
+
       form_param: {
 
         name: "investigator"
@@ -51,13 +53,25 @@ view: superstore_orders_sales_detail {
       }
 
 
+
+
      #user_attribute_param: {
      #user_attribute: email
      #name: "email"
     #}
     }
+    action: {
 
+      label: "Test_data_action_2"
+      url: "https://us-central1-testdataprepr.cloudfunctions.net/write_inv_email"
+
+      user_attribute_param: {
+        user_attribute: email
+        name: "email"
+      }
+    }
   }
+
 
   dimension: customer_name {
     type: string

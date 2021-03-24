@@ -85,6 +85,7 @@ view: superstore_orders_sales_detail {
   }
 
   dimension: order_id {
+    primary_key: yes
     type: string
     sql: ${TABLE}.Order_ID ;;
   }
